@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Header Banner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-banner">
+      <div class="banner-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+            </svg>
+            <span
+              ><a
+                href="/cdn-cgi/l/email-protection"
+                class="__cf_email__"
+                data-cfemail="630e0b0b0210020d160f23040e020a0f4d000c0e"
+                >[email&#160;protected]</a
+              ></span
+            >
+          </div>
+          <div class="contact-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+              />
+            </svg>
+            <span>(12345)67890</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">Hekto</a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search..." />
+            <button class="search-button" id="searchButton">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </button>
+          </div>
+
+          <a href="../login/index.html" class="nav-action-link" id="loginLink">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </a>
+
+          <a href="#" class="nav-action-link" id="wishlistLink">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              />
+            </svg>
+          </a>
+
+          <a href="../cart/index.html" class="nav-action-link" id="cartLink">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              />
+            </svg>
+          </a>
+
+          <button class="mobile-menu-button" id="mainNavMenuButton">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mainNavMobileMenu">
+      <button class="mobile-menu-close">&times;</button>
+      <ul class="mobile-nav-menu">
+        <!-- Main navigation mobile menu items will be inserted here by JavaScript -->
+      </ul>
+      <div class="mobile-nav-actions">
+        <!-- Login, Wishlist, and Cart links will be inserted here by JavaScript -->
+      </div>
+    </div>
+
+    <div class="hero-slider">
+      <div class="slides-container">
+        <!-- Slide 1 -->
+        <div class="slide active">
+          <div class="content-wrapper">
+            <div class="left-content">
+              <img src="../image.png" alt="Pendant Lamp" class="lamp" />
+            </div>
+            <div class="center-content">
+              <span class="tagline">Best Furniture For Your Castle....</span>
+              <h1>New Furniture Collection Trends in 2024</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna
+                in est adipiscing in phasellus non in justo.
+              </p>
+              <button class="shop-now">Shop Now</button>
+            </div>
+            <div class="right-content">
+              <img
+                src="../images/homepic.png"
+                alt="Shell Chair"
+                class="chair"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <div class="content-wrapper">
+            <div class="left-content">
+              <img src="../image.png" alt="Modern Lamp" class="lamp" />
+            </div>
+            <div class="center-content">
+              <span class="tagline">Exclusive Offers</span>
+              <h1>Modern Interior Design Collection</h1>
+              <p>
+                Transform your space with our contemporary furniture collection.
+                Quality meets style.
+              </p>
+              <button class="shop-now">View Collection</button>
+            </div>
+            <div class="right-content">
+              <img
+                s
+                src="../images/homepic.png"
+                alt="Modern Chair"
+                class="chair"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+          <div class="content-wrapper">
+            <div class="left-content">
+              <img src="../image.png" alt="Designer Lamp" class="lamp" />
+            </div>
+            <div class="center-content">
+              <span class="tagline">Limited Time Offer</span>
+              <h1>Artisan Crafted Furniture Sale</h1>
+              <p>
+                Discover handcrafted pieces that tell a story. Each item is
+                uniquely made for your home.
+              </p>
+              <button class="shop-now">Shop Sale</button>
+            </div>
+            <div class="right-content">
+              <img
+                src="../images/homepic.png"
+                alt="Artisan Chair"
+                class="chair"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="slider-nav prev">❮</button>
+      <button class="slider-nav next">❯</button>
+
+      <!-- Dots Navigation -->
+      <div class="slider-dots"></div>
+    </div>
+    <!------------------------ Filterations----------------------- -->
+    <div class="section-title">
+      <h2>Featured Products</h2>
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="modern">Modern</button>
+      <button class="filter-btn" data-category="classic">Classic</button>
+      <button class="filter-btn" data-category="minimal">Minimal</button>
+    </div>
+
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card" data-category="modern">
+        <img
+          src="../images/chair1.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Comfort Handy Craft</h3>
+          <div class="price">
+            $42.00 <span class="original-price">$65.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" data-category="minimal">
+        <div class="sale-tag">Sale</div>
+        <img
+          src="../images/chair2.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Modern Shell Chair</h3>
+          <div class="price">
+            $39.00 <span class="original-price">$59.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" data-category="classic">
+        <img
+          src="../images/chair3.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Vintage Chair</h3>
+          <div class="price">
+            $45.00 <span class="original-price">$70.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card" data-category="modern">
+        <img
+          src="../images/chair4.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Designer Lounge</h3>
+          <div class="price">
+            $55.00 <span class="original-price">$80.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card" data-category="minimal">
+        <img
+          src="../images/chair5.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Minimal Chair</h3>
+          <div class="price">
+            $35.00 <span class="original-price">$55.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card" data-category="classic">
+        <img
+          src="../images/chair6.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Classic Comfort</h3>
+          <div class="price">
+            $48.00 <span class="original-price">$75.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-category="modern">
+        <img
+          src="../images/chair1.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Comfort Handy Craft</h3>
+          <div class="price">
+            $42.00 <span class="original-price">$65.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" data-category="minimal">
+        <div class="sale-tag">Sale</div>
+        <img
+          src="../images/chair2.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Modern Shell Chair</h3>
+          <div class="price">
+            $39.00 <span class="original-price">$59.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" data-category="classic">
+        <img
+          src="../images/chair3.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Vintage Chair</h3>
+          <div class="price">
+            $45.00 <span class="original-price">$70.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card" data-category="modern">
+        <img
+          src="../images/chair4.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Designer Lounge</h3>
+          <div class="price">
+            $55.00 <span class="original-price">$80.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card" data-category="minimal">
+        <img
+          src="../images/chair5.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Minimal Chair</h3>
+          <div class="price">
+            $35.00 <span class="original-price">$55.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card" data-category="classic">
+        <img
+          src="../images/chair6.png"
+          alt="Yellow Chair"
+          class="product-image"
+        />
+        <div class="icons">
+          <div class="icon">🛒</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🔍</div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Classic Comfort</h3>
+          <div class="price">
+            $48.00 <span class="original-price">$75.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h2 class="logo">Hekto</h2>
+          <form class="signup-form" id="emailForm">
+            <input type="email" placeholder="Enter Email Address" required />
+            <button type="submit">Sign Up</button>
+          </form>
+          <div class="contact-info">
+            <h3>Contact Info</h3>
+            <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Catagories</h3>
+          <ul>
+            <li><a href="#">Laptops & Computers</a></li>
+            <li><a href="#">Cameras & Photography</a></li>
+            <li><a href="#">Smart Phones & Tablets</a></li>
+            <li><a href="#">Video Games & Consoles</a></li>
+            <li><a href="#">Waterproof Headphones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Orders History</a></li>
+            <li><a href="#">Order Tracking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Browse the Shop</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Pre-Built Pages</a></li>
+            <li><a href="#">Visual Composer Elements</a></li>
+            <li><a href="#">WooCommerce Pages</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>©Webecy - All Rights Reserved</p>
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

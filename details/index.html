@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Header Banner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-banner">
+      <div class="banner-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+            </svg>
+            <span
+              ><a
+                href="/cdn-cgi/l/email-protection"
+                class="__cf_email__"
+                data-cfemail="630e0b0b0210020d160f23040e020a0f4d000c0e"
+                >[email&#160;protected]</a
+              ></span
+            >
+          </div>
+          <div class="contact-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+              />
+            </svg>
+            <span>(12345)67890</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">Hekto</a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search..." />
+            <button class="search-button" id="searchButton">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </button>
+          </div>
+
+          <a href="#" class="nav-action-link" id="loginLink">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </a>
+
+          <a href="#" class="nav-action-link" id="wishlistLink">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              />
+            </svg>
+          </a>
+
+          <a href="#" class="nav-action-link" id="cartLink">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              />
+            </svg>
+          </a>
+
+          <button class="mobile-menu-button" id="mainNavMenuButton">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="#">Home</a>
+        <span>></span>
+        <a href="#">Pages</a>
+        <span>></span>
+        <span class="active">Product Details</span>
+      </div>
+
+      <!-- Product Section -->
+      <div class="product-section">
+        <!-- Gallery -->
+        <div class="gallery">
+          <div class="thumbnails">
+            <img
+              src="../images/details1.png"
+              class="thumbnail active"
+              alt="Product thumbnail 1"
+            />
+            <img
+              src="../images/details2.png"
+              class="thumbnail"
+              alt="Product thumbnail 2"
+            />
+            <img
+              src="../images/details3.png"
+              class="thumbnail"
+              alt="Product thumbnail 3"
+            />
+          </div>
+          <div class="main-image">
+            <img src="../images/details4.png" alt="Main product image" />
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+          <h1>Plywood arm chair</h1>
+          <div class="rating">★★★★★ <span>(89)</span></div>
+          <div class="price">
+            <span class="sale-price">$39.00</span>
+            <span class="original-price">$59.00</span>
+          </div>
+          <div class="color-select">
+            <label>Color:</label>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Brown</option>
+            </select>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+          <div class="categories">
+            <strong>Categories:</strong>
+            <a href="#">Furniture</a>
+          </div>
+          <div class="tags">
+            <strong>Tags:</strong>
+            <a href="#">Modern</a>, <a href="#">Chair</a>
+          </div>
+          <div class="share">
+            <strong>Share:</strong>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Pinterest</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="description">
+            Description
+          </button>
+          <button class="tab-btn" data-tab="additional">Additional Info</button>
+          <button class="tab-btn" data-tab="reviews">Reviews</button>
+          <button class="tab-btn" data-tab="video">Video</button>
+        </div>
+
+        <div id="description" class="tab-content active">
+          <h3>Varius tempor.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            vitae nulla consequat neque pellentesque tincidunt. Nunc tempor
+            metus orci, vel bibendum nisi cursus vitae.
+          </p>
+        </div>
+
+        <div id="additional" class="tab-content">
+          <h3>More details</h3>
+          <ul>
+            <li>High-quality materials</li>
+            <li>Ergonomic design</li>
+            <li>Easy assembly</li>
+            <li>1-year warranty</li>
+          </ul>
+        </div>
+
+        <div id="reviews" class="tab-content">
+          <h3>Customer Reviews</h3>
+          <p>No reviews yet.</p>
+        </div>
+
+        <div id="video" class="tab-content">
+          <h3>Product Video</h3>
+          <p>Coming soon.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h2 class="logo">Hekto</h2>
+          <form class="signup-form" id="emailForm">
+            <input type="email" placeholder="Enter Email Address" required />
+            <button type="submit">Sign Up</button>
+          </form>
+          <div class="contact-info">
+            <h3>Contact Info</h3>
+            <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Catagories</h3>
+          <ul>
+            <li><a href="#">Laptops & Computers</a></li>
+            <li><a href="#">Cameras & Photography</a></li>
+            <li><a href="#">Smart Phones & Tablets</a></li>
+            <li><a href="#">Video Games & Consoles</a></li>
+            <li><a href="#">Waterproof Headphones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Orders History</a></li>
+            <li><a href="#">Order Tracking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Browse the Shop</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Pre-Built Pages</a></li>
+            <li><a href="#">Visual Composer Elements</a></li>
+            <li><a href="#">WooCommerce Pages</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>©Webecy - All Rights Reserved</p>
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
