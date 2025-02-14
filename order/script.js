@@ -128,3 +128,7 @@ continueBtn.addEventListener("click", () => {
     // window.location.href = '/shop';
   }, 200);
 });
+
+function continueShopping() {
+  window.location.href = "../index.html";
+}

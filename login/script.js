@@ -245,6 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Show success message (you can replace this with your preferred UI feedback)
         alert("Logged in successfully!");
+        window.location.href="/index.html";
       }, 1500);
     }
   });

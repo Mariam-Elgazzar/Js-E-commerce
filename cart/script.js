@@ -239,3 +239,7 @@ document.querySelector(".update-cart").addEventListener("click", () => {
 
 // Initial render
 renderCartItems();
+
+function order() {
+  window.location.href = "../order/index.html";
+}

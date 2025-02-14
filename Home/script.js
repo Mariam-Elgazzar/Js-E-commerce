@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Add login link to mobile menu
   const loginLink = document.createElement("a");
-  loginLink.href = "#";
+  loginLink.href = "../login/index.html";
   loginLink.className = "mobile-nav-link";
   loginLink.innerHTML = "Login";
   mainNavMobileMenu.querySelector(".mobile-nav-menu").appendChild(loginLink);
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("loginLink").addEventListener("click", (e) => {
     e.preventDefault();
     console.log("Login clicked");
-    // Add your login logic here
+    window.location.href = "../login/index.html";
   });
 
   document.getElementById("wishlistLink").addEventListener("click", (e) => {
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("cartLink").addEventListener("click", (e) => {
     e.preventDefault();
     console.log("Cart clicked");
-    // Add your cart logic here
+    window.location.href = "../cart/index.html";
   });
 });
 
@@ -322,3 +322,8 @@ class Slider {
 document.addEventListener("DOMContentLoaded", () => {
   new Slider();
 });
+
+const data = localStorage.getItem("loginFormData");
+JSON.parse(data).name;
+const span = document.getElementById("name");
+span.textContent = JSON.parse(data).name;
